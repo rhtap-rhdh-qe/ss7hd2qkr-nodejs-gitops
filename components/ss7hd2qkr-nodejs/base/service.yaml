@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ss7hd2qkr-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ss7hd2qkr-nodejs 
+  name: ss7hd2qkr-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: ss7hd2qkr-nodejs 
